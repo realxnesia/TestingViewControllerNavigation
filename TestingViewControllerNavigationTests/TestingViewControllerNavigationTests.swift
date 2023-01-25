@@ -10,12 +10,23 @@ import XCTest
 
 final class TestingViewControllerNavigationTests: XCTestCase {
 
+    var sut: ViewController!
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        // Step 1. Create an instance of UIStoryBoard
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // Step 2. Instantiate UIViewController with storyboard ID
+        sut = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController
+        
+        // Step 3. Make the viewDidLoad() execute
+        sut.loadViewIfNeeded()
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
     }
 
     func testExample() throws {
