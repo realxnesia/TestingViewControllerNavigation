@@ -16,6 +16,7 @@
 		E6C4C7C929813BF00001EAD6 /* TestingViewControllerNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4C7C829813BF00001EAD6 /* TestingViewControllerNavigationTests.swift */; };
 		E6C4C7D329813BF00001EAD6 /* TestingViewControllerNavigationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4C7D229813BF00001EAD6 /* TestingViewControllerNavigationUITests.swift */; };
 		E6C4C7D529813BF00001EAD6 /* TestingViewControllerNavigationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4C7D429813BF00001EAD6 /* TestingViewControllerNavigationUITestsLaunchTests.swift */; };
+		E6C4C7E329813D4E0001EAD6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4C7E229813D4E0001EAD6 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E6C4C7CE29813BF00001EAD6 /* TestingViewControllerNavigationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingViewControllerNavigationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C4C7D229813BF00001EAD6 /* TestingViewControllerNavigationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewControllerNavigationUITests.swift; sourceTree = "<group>"; };
 		E6C4C7D429813BF00001EAD6 /* TestingViewControllerNavigationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewControllerNavigationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E6C4C7E229813D4E0001EAD6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,9 @@
 		E6C4C7B029813BEC0001EAD6 /* TestingViewControllerNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				E6C4C7E129813D380001EAD6 /* Controllers */,
 				E6C4C7B129813BEC0001EAD6 /* AppDelegate.swift */,
 				E6C4C7B329813BEC0001EAD6 /* SceneDelegate.swift */,
-				E6C4C7B529813BEC0001EAD6 /* ViewController.swift */,
 				E6C4C7B729813BEC0001EAD6 /* Main.storyboard */,
 				E6C4C7BA29813BF00001EAD6 /* Assets.xcassets */,
 				E6C4C7BC29813BF00001EAD6 /* LaunchScreen.storyboard */,
@@ -125,6 +127,15 @@
 				E6C4C7D429813BF00001EAD6 /* TestingViewControllerNavigationUITestsLaunchTests.swift */,
 			);
 			path = TestingViewControllerNavigationUITests;
+			sourceTree = "<group>";
+		};
+		E6C4C7E129813D380001EAD6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E6C4C7B529813BEC0001EAD6 /* ViewController.swift */,
+				E6C4C7E229813D4E0001EAD6 /* SecondViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6C4C7E329813D4E0001EAD6 /* SecondViewController.swift in Sources */,
 				E6C4C7B629813BEC0001EAD6 /* ViewController.swift in Sources */,
 				E6C4C7B229813BEC0001EAD6 /* AppDelegate.swift in Sources */,
 				E6C4C7B429813BEC0001EAD6 /* SceneDelegate.swift in Sources */,
