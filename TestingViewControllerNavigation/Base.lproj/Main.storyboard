@@ -11,7 +11,7 @@
         <!--First View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestingViewControllerNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="TestingViewControllerNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,15 +34,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="First View" id="7dI-Ud-htf"/>
+                    <connections>
+                        <outlet property="nextViewButton" destination="T6L-6X-ovd" id="wDP-xw-za7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="886.25954198473278" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="WGt-1N-hPk">
             <objects>
-                <viewController id="LT9-It-e9Q" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" id="LT9-It-e9Q" customClass="SecondViewController" customModule="TestingViewControllerNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XVc-RT-LRh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
