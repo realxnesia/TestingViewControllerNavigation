@@ -58,4 +58,15 @@ final class TestingViewControllerNavigationTests: XCTestCase {
             return
         }
     }
+    
+    func test_NextViewButton_WhenTapped_SecondViewControllerIsPushed_AnotherApproach_SPY() {
+        let spyNavigationController = SpyNavigationController(rootViewController: sut)
+        sut.nextViewButton.sendActions(for: .touchUpInside)
+        
+        guard let _ = spyNavigationController.pushedViewController as? SecondViewController else {
+            XCTFail()
+            return
+        }
+    }
+
 }

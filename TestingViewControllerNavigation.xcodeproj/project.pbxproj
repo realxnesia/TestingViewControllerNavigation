@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E65F6E812982124300CFE27C /* SpyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65F6E802982124300CFE27C /* SpyNavigationController.swift */; };
 		E6C4C7B229813BEC0001EAD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4C7B129813BEC0001EAD6 /* AppDelegate.swift */; };
 		E6C4C7B429813BEC0001EAD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4C7B329813BEC0001EAD6 /* SceneDelegate.swift */; };
 		E6C4C7B629813BEC0001EAD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4C7B529813BEC0001EAD6 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E65F6E802982124300CFE27C /* SpyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyNavigationController.swift; sourceTree = "<group>"; };
 		E6C4C7AE29813BEC0001EAD6 /* TestingViewControllerNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingViewControllerNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C4C7B129813BEC0001EAD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6C4C7B329813BEC0001EAD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				E6C4C7C829813BF00001EAD6 /* TestingViewControllerNavigationTests.swift */,
+				E65F6E802982124300CFE27C /* SpyNavigationController.swift */,
 			);
 			path = TestingViewControllerNavigationTests;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E65F6E812982124300CFE27C /* SpyNavigationController.swift in Sources */,
 				E6C4C7C929813BF00001EAD6 /* TestingViewControllerNavigationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
