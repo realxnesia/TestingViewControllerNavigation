@@ -47,4 +47,15 @@ final class TestingViewControllerNavigationTests: XCTestCase {
             return
         }
     }
+    
+    func test_NextViewButton_WhenTapped_SecondViewControllerIsPushed_AnotherApproach() {
+        sut.nextViewButton.sendActions(for: .touchUpInside)
+        
+        RunLoop.current.run(until: Date())
+        
+        guard let _ = navigationController.topViewController as? SecondViewController else {
+            XCTFail()
+            return
+        }
+    }
 }
